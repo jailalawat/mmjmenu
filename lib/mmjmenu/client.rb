@@ -5,7 +5,7 @@ module Mmjmenu
   class Parser < HTTParty::Parser
     def parse
       begin
-        Crack::JSON.parse(body)
+        JSON.parse(body)
       rescue => e
         raise UnexpectedResponseError, "Crack could not parse JSON. It said: #{e.message}. Mmjmenu's raw response: #{body}"
       end
