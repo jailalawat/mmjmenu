@@ -22,7 +22,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec", "~> 2.0.0.beta.22"
 
   s.add_dependency(%q<hashie>, ["~> 0.4.0"])
-  s.add_dependency(%q<httparty>, ["~> 0.6.1"])
+  s.add_dependency(%q<httparty>)
+  #s.add_dependency(%q<httparty>, ["~> 0.6.1"])
   s.add_dependency(%q<fakeweb>, [">= 1.3.0"])
   
 end
